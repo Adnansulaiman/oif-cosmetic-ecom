@@ -15,16 +15,18 @@ import { Autoplay, FreeMode} from 'swiper/modules';
 
 const Hero = () => {
   return (
-    <div className="flex gap">
+   
+    <div className="flex flex-col md:flex-row">
+      {/* Hero Left Side */}
       <div
-        className="w-1/2 pt-28 pl-12 bg-secondary bg-no-repeat bg-cover bg-center"
+        className="w-screen md:w-1/2 h-screen pt-28 pl-12 bg-secondary bg-no-repeat bg-cover bg-center"
         style={{ backgroundImage: `url(${HeroGif})` }}
       >
-        <div className="bg-gray-400 rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 p-6 mr-5">
-          <h1 className="text-6xl text-left font-sans font-bold">
+        <div className="bg-gray-400 w rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 p-6 mr-5">
+          <h1 className=" text-6xl max-w-3xl text-left font-sans font-bold">
             Unleash Your Inner Beauty{" "}
           </h1>
-          <p className="text-lg text-left pt-6 text-slate-800 font-semibold">
+          <p className=" text-lg text-left pt-6 text-slate-800 font-semibold">
             Discover our exclusive range of beauty and skincare products crafted
             for you
           </p>
@@ -60,8 +62,9 @@ const Hero = () => {
       </Swiper>
         </div>
       </div>
+      {/* Hero Right Side */}
       <div
-        className="w-1/2 flex items-end h-screen bg-cover bg-center"
+        className="w-screen sm:w-1/2 flex items-end h-screen bg-cover bg-center"
         style={{ backgroundImage: `url(${HeroImage})` }}
       >
         <div className="flex justify-end pr-12 mr gap-4 mb-4 w-full ">

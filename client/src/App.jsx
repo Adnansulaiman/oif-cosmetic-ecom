@@ -14,6 +14,13 @@ function App() {
   return (
     <div className="bg-secondary">
       <Navbar cartOpen={cartOpen} setCartOpen={setCartOpen} />
+
+      {cartOpen && (
+      <div
+        className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-filter backdrop-blur-sm z-40"
+        onClick={() => setCartOpen(false)} // Close cart on overlay click
+      ></div>
+    )}
       {cartOpen && <Cart setCartOpen={setCartOpen} />}
 
       <Routes>

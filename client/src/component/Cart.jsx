@@ -40,7 +40,10 @@ const Cart = ({ setCartOpen }) => {
       <div className="flex justify-center items-center rounded-2xl mb-10 mt- w-full h-16 cursor-pointer opacity-85 bg-black hover:opacity-100">
         <p className="text-xl text-white font-bold">Check out</p>
       </div>
+
+    
     </div>
+     
   );
 };
 
