@@ -13,7 +13,7 @@ const BestSeller = () => {
     <div className="px-12 pt-8">
         <h1 className="text-3xl font-semibold">Bestsellers</h1>
         <Swiper
-        slidesPerView={5.1}
+        slidesPerView={4.5}
         spaceBetween={0}
         // freeMode={true}
         

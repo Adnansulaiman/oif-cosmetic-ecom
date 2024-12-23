@@ -17,7 +17,7 @@ const Hero = () => {
   return (
     <div className="flex gap">
       <div
-        className="w-1/2 pt-32 pl-12 bg-secondary bg-no-repeat bg-cover bg-center"
+        className="w-1/2 pt-28 pl-12 bg-secondary bg-no-repeat bg-cover bg-center"
         style={{ backgroundImage: `url(${HeroGif})` }}
       >
         <div className="bg-gray-400 rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 p-6 mr-5">
@@ -29,14 +29,14 @@ const Hero = () => {
             for you
           </p>
 
-          <Link className="flex items-center text-center  justify-end pr-1 bg-transparent mt-10 border-2 border-black rounded-full w-52 h-14 hover:scale-105 ">
+          <Link className="flex items-center text-center  justify-end pr-1 bg-transparent mt-5 border-2 border-black rounded-full w-52 h-14 hover:scale-105 ">
             <p className="pr-3 text-xl font-semibold">Explore now</p>
             <div className="rounded-full w-12 h-12   border-2 border-black flex items-center justify-center">
               <BsArrowUpRight className="text-2xl text-whit" />
             </div>
           </Link>
         </div>
-        <div className="mt-5 pr-5">
+        <div className="mt-5 pr-5 mb-5">
           <h1 className="text-2xl font-semibold mb-5">Recommended for you</h1>
           <Swiper
         slidesPerView={3.3}
