@@ -4,7 +4,7 @@ import ProductImage from "../../assets/images/product-1.jpeg";
 const ListItem = () => {
   return (
     <div
-      className="w-48 h-48 rounded-2xl bg-cover bg-center  flex flex-col justify-between p-2 "
+      className="w-40 h-40 md:w-48 md:h-48 rounded-2xl bg-cover bg-center  flex flex-col justify-between p-2 "
       style={{ backgroundImage: `url(${ProductImage})` }}
     >
         <div className="flex justify-end">

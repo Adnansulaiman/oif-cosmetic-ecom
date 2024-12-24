@@ -82,7 +82,7 @@ const Navbar = ({ setCartOpen }) => {
       <Cart cartOpen={cartOpen} setCartOpen={setCartOpen} />
     )} */}
       </div>
-      <div className="flex justify-between w-full items-center md:hidden my-3 px-5 fixed bg-transparent">
+      <div className="flex justify-between w-[calc(100%-1rem)] left-1 items-center md:hidden my-3 px-5 fixed z-50 py-3 mx-2 rounded-lg bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20">
         <h1 className="text-2xl font-black">OIF.</h1>
         <div className="flex gap-4 items-center">
           <Link>

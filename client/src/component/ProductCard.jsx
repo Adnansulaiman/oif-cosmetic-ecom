@@ -4,7 +4,7 @@ import { FaPlus } from "react-icons/fa6";
 
 const ProductCard = () => {
   return (
-    <div className="w-72 h-72 flex flex-col justify-between py-3 rounded-2xl bg-cover bg-center mt-5  drop-shadow-md" style={{backgroundImage:`url(${ProductImage})`}}>
+    <div className=" w-52 h-52 md:w-72 md:h-72 flex flex-col justify-between py-3 rounded-2xl bg-cover bg-center mt-5 mb-10   drop-shadow-md" style={{backgroundImage:`url(${ProductImage})`}}>
       <div className="flex justify-between px-3 items-center">
         <p className='font-semibold text-sm'>Shiny Glam</p>
         <div className="flex justify-center items-center w-9 h-9  bg-gray-400 rounded-lg bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 ">
@@ -13,7 +13,7 @@ const ProductCard = () => {
       </div>
         <div className="flex justify-between items-center rounded-lg bg-white mx-3 p-2">
             <div className="flex flex-col justify-center">
-                <h1 className='text-sm font-semibold'>Glossy Liquid Lipstick</h1>
+                <h1 className=' text-xs md:text-sm font-semibold'>Glossy Liquid Lipstick</h1>
                 <p className='text-xs'>$ 99.99</p>
             </div>
             <div className="flex">
