@@ -7,7 +7,7 @@ import { CiFilter } from "react-icons/ci";
 import { useState } from "react";
 
 const Shop = () => {
-  const [filterOpen, setFilterOpen] = useState(true);
+  const [filterOpen, setFilterOpen] = useState(false);
   return (
     <div className="bg-contain bg-secondary ">
       <div className="pt-24 mx-4  md:mx-12 text-white ">

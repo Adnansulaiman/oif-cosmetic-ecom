@@ -1,7 +1,6 @@
 import { IoIosClose } from "react-icons/io";
 import CartImage from '../assets/images/product-3.jpeg';
-import { GoPlus } from "react-icons/go";
-import { LuMinus } from "react-icons/lu";
+import { LuMinus,LuPlus } from "react-icons/lu";
 
 const CartItem = () => {
   return (
@@ -11,11 +10,15 @@ const CartItem = () => {
                     <div className="flex flex-col my-2">
                         <h1 className="text-lg font-semibold">Product name</h1>
                         <p className="text-xs">$99.99</p>
-                        <div className="flex justify-between px-4 w-28 items-center bg-white rounded-lg mt-4">
-                            <LuMinus className="text-xl cursor-pointer hover:scale-110" />
-                            <p>1</p>
-                            <GoPlus className="text-xl cursor-pointer hover:scale-110" />
-                        </div>
+                        <div className="flex items-center mt-3 gap-2">
+                                  <div className="flex justify-center items-center p-1 rounded-md border border-black">
+                                    <LuMinus className="text-base " />
+                                  </div>
+                                  <p className="text-base font-semibold">1</p>
+                                  <div className="flex justify-center items-center p-1 rounded-md bg-black ">
+                                    <LuPlus className="text-base text-white " />
+                                  </div>
+                                </div>
                     </div>
                 </div>
                 <div className="flex">

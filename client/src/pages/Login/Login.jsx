@@ -39,8 +39,8 @@ const Login = () => {
           </div>
           <p className="underline  text-sm md:text-base hover:opacity-80 cursor-pointer">forget password?</p>
           </div>
-          <button type="submit" className="w-full h-14 text-center bg-black  text-white mt-10 md:mt-16 rounded-xl hover:bg-white border  border-black hover:text-black text-lg font-semibold   ">Sign In</button>
-          <button  className="w-full h-14 text-center bg-white  mt-3 rounded-xl hover:bg-black border-white md:border-black text-black hover:text-white text-lg font-semibold flex gap-3 items-center justify-center  "><FcGoogle className="text-3xl" /> <p>Sign In With Google</p></button>
+          <button type="submit" className="w-full h-14 text-center bg-black  text-white mt-10 md:mt-16 rounded-xl hover:bg-opacity-90 border  border-black  text-lg font-semibold   ">Sign In</button>
+          <button  className="w-full h-14 text-center bg-white  mt-3 rounded-xl hover:bg-slate-200 border-white md:border-black border  text-black  text-lg font-semibold flex gap-3 items-center justify-center  "><FcGoogle className="text-3xl" /> <p>Sign In With Google</p></button>
         </form>
       </div>
     </div>

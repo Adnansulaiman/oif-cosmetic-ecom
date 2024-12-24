@@ -6,9 +6,9 @@ const SignUp = () => {
   return (
     <div className="flex md:flex-row flex-col-reverse  text-white  md:text-black ">
       
-      <div className="flex absolute md:static flex-col justify-center items-center gap-3 px-10 md:px-32 w-full h-full  md:w-1/2">
+      <div className="flex absolute md:static flex-col justify-center  gap-3 px-10 md:px-32 w-full h-full  md:w-1/2">
         <h1 className="text-5xl text-center md:text-6xl font-bold  md:mt-28">Create an account</h1>
-        <p className=" mb-5  px-3 md:text-base text-sm">
+        <p className=" mb-5 font-semibold px-3 md:text-base text-sm">
           Already have an account? <span className="cursor-pointer underline hover:opacity-80"><Link to='/login'>Login</Link></span>
         </p>
         <form  className="flex flex-col  ">

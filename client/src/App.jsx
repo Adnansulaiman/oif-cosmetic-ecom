@@ -8,6 +8,7 @@ import Cart from "./component/Cart";
 import { useState } from "react";
 import Login from "./pages/Login/Login";
 import SignUp from "./pages/SignUp/SignUp";
+import SingleProduct from "./pages/SingleProduct/SingleProduct";
 
 function App() {
   const [cartOpen, setCartOpen] = useState(false);
@@ -28,6 +29,7 @@ function App() {
         <Route path="/shop" element={<Shop />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<SignUp />} />
+        <Route path="/product" element={<SingleProduct />} />
       </Routes>
     </div>
   );
