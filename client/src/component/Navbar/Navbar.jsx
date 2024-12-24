@@ -20,7 +20,17 @@ const Navbar = ({ setCartOpen }) => {
       document.removeEventListener("mousedown",handleClickCloseMenu)
 
     }
-},[setOpenMenu])
+},[setOpenMenu]);
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
+
+
   return (
     <>
       <div
@@ -61,7 +71,9 @@ const Navbar = ({ setCartOpen }) => {
         </ul>
         <p className="text-3xl font-black pr-20">OIF.</p>
         <div className="flex  gap-16 items-center">
-          <Link onClick={() => setCartOpen(true)}>
+          <Link onClick={() => {
+            
+            setCartOpen(true)}}>
             <p className="hover:scale-110">Cart(0)</p>
           </Link>
           <Link to="/login">
@@ -89,15 +101,16 @@ const Navbar = ({ setCartOpen }) => {
             <IoIosSearch className="text-2xl " />
           </Link>
           <Link>
-            <LiaShoppingBagSolid className="text-2xl" />
+            <LiaShoppingBagSolid onClick={()=>{setCartOpen(true)}} className="text-2xl" />
           </Link>
           <IoMenu className="text-3xl cursor-pointer" onClick={() => setOpenMenu(true)} />
         </div>
       </div>
+      {openMenu && scrollToTop()}
       {openMenu && (
         <div 
         ref={menuRef}
-        className="gap-3  ease-in-out  sm:hidden justify-between absolute p-3 w-1/3 h-screen z-50 top-0 right-0 bg-white flex flex-col">
+        className="gap-3  ease-in-out  sm:hidden justify-between absolute p-3 w-1/3 rounded-s-2xl h-screen z-50 bottom-0 right-0 bg-white flex flex-col">
         <div className="flex flex-col gap-4">
         <div className="flex border-b pb-1 border-opacity-30 border-black justify-end">
           <IoCloseOutline

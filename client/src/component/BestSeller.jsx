@@ -38,7 +38,7 @@ const BestSeller = () => {
         </div>
         <div className="flex justify-center sm:hidden">
         <Swiper
-        slidesPerView={1.7}
+        slidesPerView={2.1}
         spaceBetween={0}
         // freeMode={true}
         
