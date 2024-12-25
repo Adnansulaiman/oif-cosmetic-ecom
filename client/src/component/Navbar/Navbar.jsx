@@ -133,30 +133,35 @@ const scrollToTop = () => {
         <ul className="flex px-4 py-2 flex-col  gap-2">
           <NavLink
             to="/"
+            onClick={() => setOpenMenu(false)}
             style={({ isActive }) => (isActive ? { fontWeight: "bold" } : null)}
           >
             <li className="hover:scale-110">Home</li>
           </NavLink>
           <NavLink
             to="/shop"
+            onClick={() => setOpenMenu(false)}
             style={({ isActive }) => (isActive ? { fontWeight: "bold" } : null)}
           >
             <li className="hover:scale-110">Shop</li>
           </NavLink>
           <NavLink
             to="/about"
+            onClick={() => setOpenMenu(false)}
             style={({ isActive }) => (isActive ? { fontWeight: "bold" } : null)}
           >
             <li className="hover:scale-110">About Us</li>
           </NavLink>
           <NavLink
             to="/contact"
+            onClick={() => setOpenMenu(false)}
             style={({ isActive }) => (isActive ? { fontWeight: "bold" } : null)}
           >
             <li className="hover:scale-110">Contact</li>
           </NavLink>
           <NavLink
             to="/blog"
+            onClick={() => setOpenMenu(false)}
             style={({ isActive }) => (isActive ? { fontWeight: "bold" } : null)}
           >
             <li className="hover:scale-110">Blog</li>
